@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phanTu = parseInt(prompt(" Nhập số phần tử của mảng: "));
+    let mang = new Array(phanTu);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = prompt("Nhập các phần tử trong mảng: ");
+    }
+    let phanTua = prompt("Nhập phần tử a: ");
+
+    function myFuntion(phanTua) {
+        let dem = 0;
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] === phanTua) {
+                dem = dem + 1;
+            }
+        }
+        return document.write("Số phần tử a là: " + dem);
+    }
+
+    myFuntion(phanTua);
+</script>
+</body>
+</html>

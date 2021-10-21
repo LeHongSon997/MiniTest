@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>git </title>
+    <title></title>
 </head>
 <body>
+<script>
+    let phanTu = +(prompt(" Nhập số phần tử của mảng: "));
+    let mang = new Array(phanTu);
+    for (let i = 0; i < mang.length; i++) {
+        mang[i] = prompt("Nhập các phần tử trong mảng: ");
+    }
 
+    function myFuntion(arr) {
+        let dem = 0;
+        let result = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 0) {
+                dem++;
+                result.push(arr[i]);
+            }
+        }
+        return document.write("Số các phần tử chẵn trong mảng: " + dem);
+    }
+
+    myFuntion(mang);
+</script>
 </body>
 </html>
